@@ -81,7 +81,43 @@ class HomePage extends StatelessWidget {
       ),
 
        body: Center(
-        child: SingleChildScrollView(
+          child: SingleChildScrollView(
+       child: SingleChildScrollView(
+
+        child: Container(
+
+
+          height: 500,
+
+
+          width: 350,
+
+
+          margin: EdgeInsets.all(20),
+
+
+          padding: EdgeInsets.all(20),
+
+
+          decoration: BoxDecoration(
+
+
+            gradient: LinearGradient(
+
+
+              colors: [Colors.brown, Colors.brown.shade200],
+
+
+            ),
+
+
+            border: Border.all(color: Colors.red, width: 5),
+
+
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+
+
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -99,10 +135,89 @@ class HomePage extends StatelessWidget {
               Image.network(
                 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500',
               ),
+               Padding(
+
+
+                padding: const EdgeInsets.all(10.0),
+
+
+                child: Row(
+
+
+                  mainAxisAlignment: MainAxisAlignment.center,
+
+
+                  children: [
+
+
+                    ElevatedButton(
+
+
+                      onPressed: () {},
+
+
+                      style: ElevatedButton.styleFrom(
+
+
+                        
+
+                      ),
+
+
+                      child: Text("Elevated"),
+
+
+                    ),
+
+
+                    TextButton(
+
+
+                      onPressed: () {},
+
+
+                      style: TextButton.styleFrom(
+
+
+                        
+
+
+                      ),
+
+
+                      child: Text("Texted"),
+
+
+                    ),
+
+
+                    OutlinedButton(onPressed: () {}, child: Text("Outlined")),
+
+
+                  ],
+
+
+                ),
+
+              ),
+
+
+              
+
+
+              Container(height: 100, width: 100, color: Colors.blueGrey),
+
+
+             
+
+              
             ],
           ),
         ),
       ),
+      ),
+       ),
+    
     );
   }
 }
